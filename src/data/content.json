@@ -1,0 +1,13 @@
+{
+  "greeting": "Happy Birthday\nSweaty Jiii 💕",
+  "gallery": [
+    { "id": 1, "url": "/images/photo1.jpg", "caption": "The day we first met..." },
+    { "id": 2, "url": "/images/photo2.jpg", "caption": "Our favorite sunset." },
+    { "id": 3, "url": "/images/photo3.jpg", "caption": "Remember this laugh?" },
+    { "id": 4, "url": "/images/photo4.jpg", "caption": "My favorite photo of you." }
+  ],
+  "letter": {
+    "title": "To My Favorite Person",
+    "body": "Happy Birthday, Sweaty! 🎂\n\nI can't believe another year has passed. Watching you grow has been the highlight of my life.\n\n### Why You Are Special\n\nYou bring so much light into the world. Your smile, your laugh, and even your silly jokes make everything better. I remember that time we went to the beach and you dropped your ice cream—you just laughed it off. That's what I love about you.\n\n### Our Future\n\nI look forward to making so many more memories with you. Whether it's traveling the world or just sitting on the couch watching movies, as long as I'm with you, I'm happy.\n\n### A Promise\n\nI promise to always be there for you, to support your dreams, and to buy you cake whenever you want (mostly).\n\nHere's to 20, and here's to us! 🥂"
+  }
+}
