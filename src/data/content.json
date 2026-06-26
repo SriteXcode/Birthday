@@ -1,10 +1,301 @@
 {
   "greeting": "Happy Birthday\nSweaty Jiii 💕",
   "gallery": [
-    { "id": 1, "url": "/images/photo1.jpg", "caption": "The day we first met..." },
-    { "id": 2, "url": "/images/photo2.jpg", "caption": "Our favorite sunset." },
-    { "id": 3, "url": "/images/photo3.jpg", "caption": "Remember this laugh?" },
-    { "id": 4, "url": "/images/photo4.jpg", "caption": "My favorite photo of you." }
+    {
+      "id": 1,
+      "url": "/images/IMG20251217135514.jpg",
+      "caption": "The day we first met..."
+    },
+    {
+      "id": 2,
+      "url": "/images/IMG20251217140252.jpg",
+      "caption": "Our favorite sunset."
+    },
+    {
+      "id": 3,
+      "url": "/images/IMG20251217145849.jpg",
+      "caption": "Remember this laugh?"
+    },
+    {
+      "id": 4,
+      "url": "/images/IMG_20251109_192538.jpg",
+      "caption": "My favorite photo of you."
+    },
+    {
+      "id": 5,
+      "url": "/images/IMG_20251109_200148.jpg",
+      "caption": "Every moment with you is magic ✨"
+    },
+    {
+      "id": 6,
+      "url": "/images/IMG_20251109_200200.jpg",
+      "caption": "Together is my favorite place to be ❤️"
+    },
+    {
+      "id": 7,
+      "url": "/images/IMG_20251110_062705.jpg",
+      "caption": "You make my heart skip a beat 💓"
+    },
+    {
+      "id": 8,
+      "url": "/images/IMG_20251110_065930.jpg",
+      "caption": "Silly faces and endless giggles 😜"
+    },
+    {
+      "id": 9,
+      "url": "/images/IMG_20251110_070032.jpg",
+      "caption": "Your smile is my favorite view 😍"
+    },
+    {
+      "id": 10,
+      "url": "/images/IMG_20251110_070035.jpg",
+      "caption": "A little bit of crazy, a lot of love!"
+    },
+    {
+      "id": 11,
+      "url": "/images/IMG_20251110_145015.jpg",
+      "caption": "Making memories with you is my favorite thing to do."
+    },
+    {
+      "id": 12,
+      "url": "/images/IMG_20251110_145015_1.jpg",
+      "caption": "Just you and me against the world 🌍"
+    },
+    {
+      "id": 13,
+      "url": "/images/IMG_20251110_150834.jpg",
+      "caption": "My constant source of happiness 💕"
+    },
+    {
+      "id": 14,
+      "url": "/images/IMG_20251110_150949.jpg",
+      "caption": "Can't get enough of this sweet smile."
+    },
+    {
+      "id": 15,
+      "url": "/images/IMG_20251110_172626.jpg",
+      "caption": "You are my sunshine on a cloudy day ☀️"
+    },
+    {
+      "id": 16,
+      "url": "/images/IMG_20251112_094910.jpg",
+      "caption": "Forever isn't long enough with you."
+    },
+    {
+      "id": 17,
+      "url": "/images/IMG_20251112_104754.jpg",
+      "caption": "The best version of me is with you."
+    },
+    {
+      "id": 18,
+      "url": "/images/IMG_20251112_105010.jpg",
+      "caption": "Every day is an adventure with you 🗺️"
+    },
+    {
+      "id": 19,
+      "url": "/images/IMG_20251112_110131.jpg",
+      "caption": "Holding your hand is holding my world."
+    },
+    {
+      "id": 20,
+      "url": "/images/IMG_20251112_111111.jpg",
+      "caption": "You're my favorite distraction."
+    },
+    {
+      "id": 21,
+      "url": "/images/IMG_20251112_112108.jpg",
+      "caption": "So many of my smiles start with you 😊"
+    },
+    {
+      "id": 22,
+      "url": "/images/Snapchat-122506791.jpg",
+      "caption": "You look absolutely gorgeous here!"
+    },
+    {
+      "id": 23,
+      "url": "/images/Snapchat-1326932030.jpg",
+      "caption": "A sweet reminder of how lucky I am."
+    },
+    {
+      "id": 24,
+      "url": "/images/Snapchat-1378849383.jpg",
+      "caption": "Falling in love with you all over again 💞"
+    },
+    {
+      "id": 25,
+      "url": "/images/Snapchat-1441289316.jpg",
+      "caption": "My dream come true ✨"
+    },
+    {
+      "id": 26,
+      "url": "/images/Snapchat-1445436529.jpg",
+      "caption": "The peanut butter to my jelly 🥪"
+    },
+    {
+      "id": 27,
+      "url": "/images/Snapchat-1478619900.jpg",
+      "caption": "Priceless moments like these."
+    },
+    {
+      "id": 28,
+      "url": "/images/Snapchat-1563398945.jpg",
+      "caption": "You have my whole heart, always."
+    },
+    {
+      "id": 29,
+      "url": "/images/Snapchat-1611540620.jpg",
+      "caption": "Blessed to call you mine 🌸"
+    },
+    {
+      "id": 30,
+      "url": "/images/Snapchat-1638311433.jpg",
+      "caption": "Creating our own little fairytale."
+    },
+    {
+      "id": 31,
+      "url": "/images/Snapchat-1720239220.jpg",
+      "caption": "My favorite person in the entire universe 💫"
+    },
+    {
+      "id": 32,
+      "url": "/images/Snapchat-175768146.jpg",
+      "caption": "Sparkling brighter than the stars ✨"
+    },
+    {
+      "id": 33,
+      "url": "/images/Snapchat-1824449375.jpg",
+      "caption": "You make life sweet 🍬"
+    },
+    {
+      "id": 34,
+      "url": "/images/Snapchat-1878155200.jpg",
+      "caption": "Captured: A moment of pure happiness."
+    },
+    {
+      "id": 35,
+      "url": "/images/Snapchat-1928394355.jpg",
+      "caption": "My safe haven and happy place."
+    },
+    {
+      "id": 36,
+      "url": "/images/Snapchat-1992925205.jpg",
+      "caption": "Laughter is louder when we're together."
+    },
+    {
+      "id": 37,
+      "url": "/images/Snapchat-2000394507.jpg",
+      "caption": "Two hearts, one beautiful journey 💖"
+    },
+    {
+      "id": 38,
+      "url": "/images/Snapchat-2135239111.jpg",
+      "caption": "To the moon and back, always 🌙"
+    },
+    {
+      "id": 39,
+      "url": "/images/Snapchat-279162744.jpg",
+      "caption": "Warm hugs and sweet memories."
+    },
+    {
+      "id": 40,
+      "url": "/images/Snapchat-357761748.jpg",
+      "caption": "I love you more than words can say."
+    },
+    {
+      "id": 41,
+      "url": "/images/Snapchat-361272831.jpg",
+      "caption": "You are my absolute favorite human."
+    },
+    {
+      "id": 42,
+      "url": "/images/Snapchat-408146909.jpg",
+      "caption": "Making every ordinary day feel extraordinary."
+    },
+    {
+      "id": 43,
+      "url": "/images/Snapchat-443136224.jpg",
+      "caption": "My daily dose of love and laughter."
+    },
+    {
+      "id": 44,
+      "url": "/images/Snapchat-480600907.jpg",
+      "caption": "Side by side, heart to heart 💞"
+    },
+    {
+      "id": 45,
+      "url": "/images/Snapchat-523597164.jpg",
+      "caption": "You look so incredibly cute here!"
+    },
+    {
+      "id": 46,
+      "url": "/images/Snapchat-603123535.jpg",
+      "caption": "Stole my heart from day one."
+    },
+    {
+      "id": 47,
+      "url": "/images/Snapchat-772440736.jpg",
+      "caption": "Life is beautiful because of you."
+    },
+    {
+      "id": 48,
+      "url": "/images/Snapchat-782168781.jpg",
+      "caption": "My ultimate happy place."
+    },
+    {
+      "id": 49,
+      "url": "/images/Snapchat-817585735.jpg",
+      "caption": "You make my soul happy ✨"
+    },
+    {
+      "id": 50,
+      "url": "/images/Snapchat-820743132.jpg",
+      "caption": "Sweeter than birthday cake 🎂"
+    },
+    {
+      "id": 51,
+      "url": "/images/Snapchat-839071277.jpg",
+      "caption": "Always matching, always smiling."
+    },
+    {
+      "id": 52,
+      "url": "/images/Snapchat-877190337.jpg",
+      "caption": "The sparkle in my eye is because of you."
+    },
+    {
+      "id": 53,
+      "url": "/images/Snapchat-981947005.jpg",
+      "caption": "Cherishing every single second with you."
+    },
+    {
+      "id": 54,
+      "url": "/images/photo1.jpg",
+      "caption": "You're my today and all of my tomorrows."
+    },
+    {
+      "id": 55,
+      "url": "/images/photo2.jpg",
+      "caption": "Crazy in love with you!"
+    },
+    {
+      "id": 56,
+      "url": "/images/photo3.jpg",
+      "caption": "You make my world spin around 🌀"
+    },
+    {
+      "id": 57,
+      "url": "/images/photo4.jpg",
+      "caption": "Infinite love for this one ♾️"
+    },
+    {
+      "id": 58,
+      "url": "/images/photo5.jpg",
+      "caption": "Simply the best part of my day."
+    },
+    {
+      "id": 59,
+      "url": "/images/photo6.jpg",
+      "caption": "My happily ever after begins with you 🏰"
+    }
   ],
   "letter": {
     "title": "To My Favorite Person",

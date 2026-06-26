@@ -1,5 +1,8 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Environment, Float, Text, FlyControls, PerspectiveCamera } from "@react-three/drei";
+import { suspend } from "suspend-react";
+
+const sunsetAsset = import("@pmndrs/assets/hdri/sunset.exr");
 import { Physics } from "@react-three/rapier";
 import { useNavigate } from "react-router-dom";
 import PhotoFrame from "../components/PhotoFrame";
@@ -52,7 +55,7 @@ function MapLogic({ playerDotRef }) {
 // Fixed function to generate frames without using Math.random during render
 const generateFrames = () => {
   const baseImages = contentData.gallery;
-  const totalFrames = 50;
+  const totalFrames = baseImages.length;
   const generated = [];
 
   for (let i = 0; i < totalFrames; i++) {
@@ -91,7 +94,7 @@ export default function GalleryScene() {
     if (cameraRef.current) {
        cameraRef.current.position.set(0, 0, 25);
        cameraRef.current.lookAt(0, 0, 0);
-    }
+     }
   };
 
   return (
@@ -109,7 +112,7 @@ export default function GalleryScene() {
 
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 25]} ref={cameraRef} fov={60} />
-        <Environment preset="sunset" background blur={0.6} />
+        <Environment files={suspend(sunsetAsset).default} background blur={0.6} />
         <ambientLight intensity={0.8} />
         
         <MapLogic playerDotRef={playerDotRef} />
@@ -125,7 +128,7 @@ export default function GalleryScene() {
               outlineColor="#3A2F4D"
               textAlign="center"
             >
-              Explore 50 Memories...
+              {`Explore ${frames.length} Memories...`}
             </Text>
           </Float>
         )}
@@ -164,8 +167,7 @@ export default function GalleryScene() {
         ) : (
           <OrbitControls 
             enableZoom={true} 
-            autoRotate={!selectedPhoto}
-            autoRotateSpeed={0.5}
+            autoRotate={false}
             enablePan={true}
           />
         )}

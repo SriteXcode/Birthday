@@ -1,5 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, Float, Text, Center, Stars } from "@react-three/drei";
+import { suspend } from "suspend-react";
+
+const dawnAsset = import("@pmndrs/assets/hdri/dawn.exr");
 import { Physics, CuboidCollider } from "@react-three/rapier";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -38,7 +41,7 @@ export default function SurpriseScene() {
   return (
     <>
       <Canvas camera={{ position: [0, 3, 8], fov: 45 }}>
-        <Environment preset="dawn" background blur={0.8} />
+        <Environment files={suspend(dawnAsset).default} background blur={0.8} />
         <ambientLight intensity={0.6} />
         <spotLight position={[5, 10, 5]} angle={0.5} penumbra={1} intensity={1} castShadow />
         <pointLight position={[-5, 5, 5]} intensity={0.5} color="#FFB7B2" />

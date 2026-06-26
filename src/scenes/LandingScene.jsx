@@ -1,5 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, Float, Text } from "@react-three/drei";
+import { suspend } from "suspend-react";
+
+const sunsetAsset = import("@pmndrs/assets/hdri/sunset.exr");
 import { Physics, CuboidCollider } from "@react-three/rapier";
 import { Suspense } from "react";
 import Cake from "../components/Cake";
@@ -58,7 +61,7 @@ export default function LandingScene({ isCelebrating }) {
 
   return (
     <Canvas camera={{ position: [10, 5, 12], fov: 45 }}>
-      <Environment preset="sunset" background blur={0.6} />
+      <Environment files={suspend(sunsetAsset).default} background blur={0.6} />
 
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
