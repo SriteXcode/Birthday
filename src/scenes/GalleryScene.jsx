@@ -120,6 +120,7 @@ export default function GalleryScene() {
 
         {!flyMode && (
           <Float speed={2} floatIntensity={0.5}>
+          {/* l */}
             <Text 
               position={[0, 8, 0]} 
               fontSize={1} 
