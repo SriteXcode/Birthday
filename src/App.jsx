@@ -6,7 +6,9 @@ import Gallery from "./pages/Gallery";
 import LockedSurprise from "./pages/LockedSurprise";
 import Final from "./pages/Final";
 import Admin from "./pages/Admin";
+import SweatyHome from "./pages/SweatyHome";
 import MusicPlayer from "./components/MusicPlayer";
+import Navigation from "./components/Navigation";
 
 function AppContent() {
   return (
@@ -15,6 +17,7 @@ function AppContent() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/surprise" element={<LockedSurprise />} />
       <Route path="/final" element={<Final />} />
+      <Route path="/sweaty-home" element={<SweatyHome />} />
       <Route path="/admin" element={<Admin />} />
     </Routes>
   );
@@ -24,6 +27,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <MusicPlayer />
+      <Navigation />
       <Suspense fallback={null}>
         <AppContent />
       </Suspense>

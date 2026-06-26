@@ -530,3 +530,347 @@ body {
   color: #666;
   margin-top: 20px;
 }
+
+/* Navigation Tabs Bar */
+.nav-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  width: 90%;
+  max-width: 620px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: flex;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 6px;
+  box-shadow: 0 8px 32px 0 rgba(136, 14, 79, 0.08), 
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.3);
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 40px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  white-space: nowrap;
+}
+
+.nav-tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+.nav-tab.active {
+  background: #FF69B4;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.nav-tab span {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    top: auto;
+    bottom: 20px;
+    width: 95%;
+  }
+  .nav-bar {
+    padding: 4px;
+    gap: 2px;
+  }
+  .nav-tab {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+  .nav-tab span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Sweaty's 3D Home HUD & Joystick Styles */
+.home-scene-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.game-hud {
+  position: absolute;
+  top: 100px; /* Below the main navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.objective-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(136, 14, 79, 0.1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  pointer-events: auto;
+}
+
+.objective-panel p {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.action-panel {
+  position: absolute;
+  bottom: 120px;
+  right: 40px;
+  z-index: 1001;
+  display: flex;
+  gap: 15px;
+}
+
+.hud-action-btn {
+  background: #FF69B4;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.5);
+  transition: all 0.2s ease;
+}
+
+.hud-action-btn:hover {
+  transform: scale(1.1);
+  background: #FF1493;
+}
+
+.hud-action-btn.yellow-glow {
+  background: #FFD966;
+  color: #333;
+  box-shadow: 0 10px 25px rgba(255, 217, 102, 0.6);
+}
+
+.hud-action-btn.yellow-glow:hover {
+  background: #FFC107;
+}
+
+.pulse-anim {
+  animation: hudPulse 1.5s infinite alternate;
+}
+
+@keyframes hudPulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Joystick Styles */
+.joystick-container {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 120px;
+  height: 120px;
+  z-index: 1002;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+}
+
+.joystick-base {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  pointer-events: none;
+}
+
+.joystick-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FF69B4;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  pointer-events: none;
+  transition: background 0.2s;
+}
+
+.joystick-container:hover .joystick-thumb {
+  background: #FF1493;
+}
+
+.joystick-hint {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.75rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  white-space: nowrap;
+  pointer-events: none;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .game-hud {
+    top: 30px;
+  }
+  .action-panel {
+    bottom: 160px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .joystick-container {
+    bottom: 150px;
+  }
+  .left-joystick {
+    left: 20px;
+    right: auto;
+  }
+  .right-joystick {
+    left: auto;
+    right: 20px;
+  }
+}
+
+/* Left/Right Joysticks Desktop Placement */
+.left-joystick {
+  left: 40px;
+}
+
+.right-joystick {
+  left: auto;
+  right: 40px;
+}
+
+/* Game Popup Modal Modals */
+.game-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.game-popup-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 35px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 440px;
+  width: 90%;
+  border: 3px solid #FF69B4;
+  animation: popupScaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.game-popup-card.yellow-border {
+  border-color: #FFD966;
+}
+
+.game-popup-card h2 {
+  font-family: var(--font-malibu);
+  color: #FF69B4;
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.game-popup-card.yellow-border h2 {
+  color: #FFD966;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.game-popup-card p {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.popup-action-btn {
+  background: #FF69B4;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  transition: all 0.2s ease;
+}
+
+.popup-action-btn:hover {
+  transform: scale(1.05);
+  background: #FF1493;
+}
+
+.popup-action-btn.yellow-btn {
+  background: #FFD966;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(255, 217, 102, 0.4);
+}
+
+.popup-action-btn.yellow-btn:hover {
+  background: #FFC107;
+}
+
+@keyframes popupScaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
