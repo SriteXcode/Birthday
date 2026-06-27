@@ -23,6 +23,12 @@ export default function Navigation() {
           <span>🏠</span> Sweaty's Home
         </Link>
         <Link 
+          to="/timeline" 
+          className={`nav-tab ${path === "/timeline" ? "active" : ""}`}
+        >
+          <span>⏳</span> Timeline
+        </Link>
+        <Link 
           to="/gallery" 
           className={`nav-tab ${path === "/gallery" ? "active" : ""}`}
         >
@@ -38,7 +44,7 @@ export default function Navigation() {
           to="/final" 
           className={`nav-tab ${path === "/final" ? "active" : ""}`}
         >
-          <span>✉️</span> Love Letter
+          <span>✉️</span> My Words
         </Link>
       </nav>
     </div>

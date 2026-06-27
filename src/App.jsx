@@ -7,6 +7,7 @@ import LockedSurprise from "./pages/LockedSurprise";
 import Final from "./pages/Final";
 import Admin from "./pages/Admin";
 import SweatyHome from "./pages/SweatyHome";
+import Timeline from "./pages/Timeline";
 import MusicPlayer from "./components/MusicPlayer";
 import Navigation from "./components/Navigation";
 
@@ -18,6 +19,7 @@ function AppContent() {
       <Route path="/surprise" element={<LockedSurprise />} />
       <Route path="/final" element={<Final />} />
       <Route path="/sweaty-home" element={<SweatyHome />} />
+      <Route path="/timeline" element={<Timeline />} />
       <Route path="/admin" element={<Admin />} />
     </Routes>
   );
